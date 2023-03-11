@@ -95,6 +95,9 @@ contract gNaira is ERC20, Ownable {
         return super.transferFrom(sender, recipient, amount);
     }
 
+    // The function checks whether the given wallet address is present in the list of approved wallets 
+    // and returns true if it is, and false if it is not.
+
     function isApprovedWallet(address wallet) public view returns (bool) {
         for (uint i = 0; i < _approvedWallets.length; i++) {
             if (_approvedWallets[i] == wallet) {
@@ -104,11 +107,16 @@ contract gNaira is ERC20, Ownable {
         return false;
     }
 
+    // This function adds a new wallet address to the list of approved wallets, 
+    // but only if the wallet is not already approved and the caller is the governor.
+
     function addApprovedWallet(address wallet) public onlyGovernor {
         require(!isApprovedWallet(wallet), "Wallet is already approved.");
         _approvedWallets.push(wallet);
     }
 
+    // This function removes an approved wallet from a list of approved wallets if it exists, 
+    // and can only be called by the governor.
     function removeApprovedWallet(address wallet) public onlyGovernor {
         require(isApprovedWallet(wallet), "Wallet is not approved.");
         for (uint i = 0; i < _approvedWallets.length; i++) {
