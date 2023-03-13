@@ -35,8 +35,4 @@
   Contributions to the G-Naira smart contract are welcome! Please submit a pull request with your proposed changes. 
 </p>
 
-<h2>License</h2>
 
-<p>
-  The G-Naira smart contract is released under the MIT license. See LICENSE for more details. 
-</p>
