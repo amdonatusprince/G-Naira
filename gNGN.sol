@@ -24,8 +24,6 @@ contract gNGN is ERC20, Ownable {
     // this variable is used to enforce multi-signature approval for certain actions, 
     // such as minting or burning tokens.
 
-    uint8 constant private _requiredApprovals = 2;
-
     constructor() ERC20("G-Naira", "gNGN") {}
 
     // This function mints new tokens and adds them to the balance of the recipient address. 
