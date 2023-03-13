@@ -30,6 +30,7 @@ contract gNaira is ERC20, Ownable {
     address[] private _approvedWallets;
 
     constructor() ERC20("G-Naira", "gNGN") {}
+   
 
     // This function mints new tokens and adds them to the balance of the recipient address. 
     // Only the contract owner (the "Governor") can call this function.
