@@ -135,7 +135,7 @@ contract gNGN is ERC20, Ownable {
     }
 
     // This function is used to renounceOwnership and by defauult to 0x but when called does nothing
-
+    
      function renounceOwnership() public pure override {}
 
 }
