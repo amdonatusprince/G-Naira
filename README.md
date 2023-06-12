@@ -32,7 +32,7 @@
 <h2>Contributing</h2>
 
 <p>
-  Contributions to the G-Naira smart contract are welcome! Please submit a pull request with your proposed changes. 
+  Contributions to the G-Naira smart contract are welcome! Please submit a pull request with your proposed changes and someone from the team will get back to you. 
 </p>
 
 
